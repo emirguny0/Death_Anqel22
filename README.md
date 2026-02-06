@@ -46,6 +46,3 @@ investor-mail-system/
 ## 👨‍💻 Geliştiriciler
 
 **emirgunyy** & **gktrk363**
-
----
-Made with ❤️ and ☕
