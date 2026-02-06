@@ -1,49 +1,51 @@
-# Yatırımcı Mail Sistemi
+# 📧 Investor Mail System
 
-Gmail entegrasyonlu, Streamlit tabanlı yatırımcı mail sistemi.
+Yatırımcılara toplu mail gönderimi için modern Streamlit uygulaması.
 
-## Kurulum
+## ✨ Özellikler
 
-1. **Gerekli paketleri yükle:**
+- 🔐 Gmail OAuth & App Password desteği
+- 📝 Özelleştirilebilir mail şablonları
+- 👥 Yatırımcı CRM sistemi
+- 📊 Gönderim istatistikleri
+- ⏰ Zamanlanmış mail gönderimi
+- 🧪 A/B test simülasyonu
+
+## 🚀 Kurulum
+
 ```bash
 pip install -r requirements.txt
-```
-
-2. **Uygulamayı başlat:**
-```bash
 streamlit run app.py
 ```
 
-3. **Tarayıcıda aç:** http://localhost:8501
-
-## Gmail Ayarları
-
-Gmail ile kullanmak için **Uygulama Şifresi** gerekiyor:
-
-1. Gmail > Hesabı Yönet > Güvenlik
-2. 2 Adımlı Doğrulama'yı aç
-3. Uygulama Şifreleri > Yeni şifre oluştur
-4. Oluşan 16 haneli şifreyi uygulamada kullan
-
-## Özellikler
-
-- 📧 Gmail SMTP entegrasyonu
-- 👥 TXT/CSV/Excel ile yatırımcı yükleme
-- 📝 HTML mail şablonları
-- 📤 Toplu/seçici mail gönderimi
-- 📊 Dashboard ve istatistikler
-- 📜 Gönderim geçmişi
-
-## Dosya Yapısı
+## 📁 Dosya Yapısı
 
 ```
 investor-mail-system/
 ├── app.py              # Ana uygulama
-├── config.py           # Ayarlar
 ├── database.py         # SQLite işlemleri
-├── mail_sender.py      # Gmail SMTP
-├── template_engine.py  # Şablon motoru
-├── data/               # Veritabanı
-├── templates/          # Mail şablonları
-└── uploads/            # Geçici yüklemeler
+├── mail_sender.py      # SMTP gönderim
+├── gmail_oauth.py      # OAuth2 entegrasyonu
+├── template_engine.py  # Jinja2 şablon motoru
+├── scheduler.py        # Zamanlanmış görevler
+└── config.py           # Ayarlar
 ```
+
+## 🔧 Gmail Kurulumu
+
+**OAuth (Önerilen):**
+1. Google Cloud Console'da OAuth credentials oluştur
+2. `data/credentials.json` olarak kaydet
+3. Uygulamadan "Google ile Giriş" yap
+
+**App Password:**
+1. Gmail > Güvenlik > 2FA aç
+2. Uygulama Şifresi oluştur
+3. Uygulamada giriş yap
+
+## 👨‍💻 Geliştiriciler
+
+**emirgunyy** & **gktrk363**
+
+---
+Made with ❤️ and ☕
