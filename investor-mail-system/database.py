@@ -445,9 +445,6 @@ def get_investor_interactions(investor_id):
     return interactions
 
 
-    return interactions
-
-
 # ============ SCHEDULER OPERATIONS ============
 
 def schedule_mail(investor_id, template_id, subject, body, scheduled_time):
